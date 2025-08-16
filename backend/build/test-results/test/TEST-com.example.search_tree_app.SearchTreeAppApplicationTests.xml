@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.search_tree_app.SearchTreeAppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-15T23:45:27.079Z" hostname="MORRISON" time="0.35">
+<testsuite name="com.example.search_tree_app.SearchTreeAppApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-16T00:01:34.081Z" hostname="MORRISON" time="0.264">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.search_tree_app.SearchTreeAppApplicationTests" time="0.35"/>
-  <system-out><![CDATA[21:15:24.081 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.search_tree_app.SearchTreeAppApplicationTests]: SearchTreeAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:15:24.176 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.search_tree_app.SearchTreeAppApplication for test class com.example.search_tree_app.SearchTreeAppApplicationTests
+  <testcase name="contextLoads()" classname="com.example.search_tree_app.SearchTreeAppApplicationTests" time="0.264"/>
+  <system-out><![CDATA[21:31:30.512 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.search_tree_app.SearchTreeAppApplicationTests]: SearchTreeAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:31:30.617 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.search_tree_app.SearchTreeAppApplication for test class com.example.search_tree_app.SearchTreeAppApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +14,18 @@
 
  :: Spring Boot ::                (v3.5.4)
 
-2025-08-15T21:15:24.555-02:30  INFO 11300 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : Starting SearchTreeAppApplicationTests using Java 21.0.8 with PID 11300 (started by Morrison in C:\Users\Morrison\Documents\Keyin_College\binary_search_tree\search_tree_app\backend)
-2025-08-15T21:15:24.556-02:30  INFO 11300 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2025-08-15T21:15:25.061-02:30  INFO 11300 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-15T21:15:25.078-02:30  INFO 11300 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2025-08-15T21:15:25.384-02:30  INFO 11300 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-15T21:15:25.453-02:30  INFO 11300 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-08-15T21:15:25.500-02:30  INFO 11300 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-15T21:15:25.766-02:30  INFO 11300 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-15T21:15:25.795-02:30  INFO 11300 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-15T21:15:25.938-02:30  INFO 11300 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bstdb user=SA
-2025-08-15T21:15:25.940-02:30  INFO 11300 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-15T21:15:25.995-02:30  INFO 11300 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-15T21:31:30.974-02:30  INFO 1928 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : Starting SearchTreeAppApplicationTests using Java 21.0.8 with PID 1928 (started by Morrison in C:\Users\Morrison\Documents\Keyin_College\binary_search_tree\search_tree_app\backend)
+2025-08-15T21:31:30.976-02:30  INFO 1928 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T21:31:31.598-02:30  INFO 1928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T21:31:31.643-02:30  INFO 1928 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-08-15T21:31:31.981-02:30  INFO 1928 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T21:31:32.042-02:30  INFO 1928 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T21:31:32.080-02:30  INFO 1928 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T21:31:32.380-02:30  INFO 1928 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T21:31:32.407-02:30  INFO 1928 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T21:31:32.550-02:30  INFO 1928 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bstdb user=SA
+2025-08-15T21:31:32.552-02:30  INFO 1928 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T21:31:32.599-02:30  INFO 1928 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -33,11 +33,11 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-15T21:15:26.237-02:30  INFO 11300 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-15T21:15:26.241-02:30  INFO 11300 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-15T21:15:26.359-02:30  WARN 11300 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-15T21:15:26.942-02:30  INFO 11300 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bstdb'
-2025-08-15T21:15:27.047-02:30  INFO 11300 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : Started SearchTreeAppApplicationTests in 2.718 seconds (process running for 3.692)
+2025-08-15T21:31:33.195-02:30  INFO 1928 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T21:31:33.220-02:30  INFO 1928 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T21:31:33.641-02:30  WARN 1928 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T21:31:33.986-02:30  INFO 1928 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:bstdb'
+2025-08-15T21:31:34.064-02:30  INFO 1928 --- [    Test worker] c.e.s.SearchTreeAppApplicationTests      : Started SearchTreeAppApplicationTests in 3.308 seconds (process running for 4.292)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\Morrison\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.6\17b32fd9f57deef02842f7f05abc4ad8127fe34e\byte-buddy-agent-1.17.6.jar)

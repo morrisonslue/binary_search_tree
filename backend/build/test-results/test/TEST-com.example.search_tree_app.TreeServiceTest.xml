@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.search_tree_app.TreeServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-16T00:01:34.353Z" hostname="MORRISON" time="0.145">
+  <properties/>
+  <testcase name="parse_should_return_int_list()" classname="com.example.search_tree_app.TreeServiceTest" time="0.004"/>
+  <testcase name="process_and_save_should_store_record()" classname="com.example.search_tree_app.TreeServiceTest" time="0.141"/>
+  <system-out><![CDATA[2025-08-15T21:31:34.348-02:30  INFO 1928 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.search_tree_app.TreeServiceTest]: TreeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-08-15T21:31:34.350-02:30  INFO 1928 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.search_tree_app.SearchTreeAppApplication for test class com.example.search_tree_app.TreeServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
