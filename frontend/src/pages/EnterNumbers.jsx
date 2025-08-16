@@ -1,6 +1,7 @@
 // page to send the numbers to API
 
 import { useState } from 'react';
+import TreeView from '../components/TreeView.jsx';
 
 export default function EnterNumbers() {
     const [numbers, setNumbers] = useState('');
@@ -24,6 +25,11 @@ export default function EnterNumbers() {
         finally{ setLoading(false); }
     }
 
+    const tree = (() => {
+        try { return result && result.treeJson ? JSON.parse(result.treeJson) : null; }
+        catch { return null; }
+    })();
+
     return (
         <div style={{display:'grid', gap:16}}>
             <h1 className="h1">Enter Numbers</h1>
@@ -39,6 +45,9 @@ export default function EnterNumbers() {
                     <h2 className="h2">Result</h2>
                     <div className="label mono">record</div>
                     <pre className="mono">{JSON.stringify(result, null, 2)}</pre>
+
+                    <div className="label mono" style={{marginTop:8}}>tree</div>
+                    <TreeView root={tree} />
                 </div>
             )}
         </div>

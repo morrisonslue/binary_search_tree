@@ -1,10 +1,11 @@
 // page to show the records that we saved
 
 import { useEffect, useState } from 'react';
+import TreeView from '../components/TreeView.jsx';
 
 function fmt(ts) {
     if (!ts) return '';
-    const d = new Date(ts); 
+    const d = new Date(ts);
     const pad = (n) => String(n).padStart(2, '0');
     const y = d.getFullYear();
     const m = pad(d.getMonth() + 1);
@@ -36,22 +37,34 @@ export default function Previous() {
             {err && <div className="mono" style={{color:'#ffb199'}}>error: {err}</div>}
 
             <div style={{display:'grid', gap:14}}>
-                {items.map(x => (
-                    <div key={x.id} className="card" style={{display:'grid', gap:8}}>
-                        <div>
-                            <span className="label mono">input</span>
-                            <div className="mono">{x.numbersInput}</div>
+                {items.map(x => {
+                    const root = (() => {
+                        try { return x && x.treeJson ? JSON.parse(x.treeJson) : null; }
+                        catch { return null; }
+                    })();
+
+                    return (
+                        <div key={x.id} className="card" style={{display:'grid', gap:8}}>
+                            <div>
+                                <span className="label mono">input</span>
+                                <div className="mono">{x.numbersInput}</div>
+                            </div>
+                            <div className="label mono">created</div>
+                            <div className="mono">{fmt(x.createdAt)}</div>
+
+                            <div className="label mono" style={{marginTop:6}}>tree</div>
+                            <TreeView root={root} />
+
+                            <details>
+                                <summary className="mono">tree json</summary>
+                                <pre className="mono" style={{marginTop:8}}>{x.treeJson}</pre>
+                            </details>
                         </div>
-                        <div className="label mono">created</div>
-                        <div className="mono">{fmt(x.createdAt)}</div>
-                        <details>
-                            <summary className="mono">tree json</summary>
-                            <pre className="mono" style={{marginTop:8}}>{x.treeJson}</pre>
-                        </details>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     );
 }
+
 
