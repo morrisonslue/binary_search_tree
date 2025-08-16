@@ -20,3 +20,9 @@ dist/
 # OS junk
 .DS_Store
 Thumbs.db
+# Gradle
+.gradle/
+**/.gradle/
+**/build/
+# keep the wrapper jar if present
+!gradle/wrapper/gradle-wrapper.jar
